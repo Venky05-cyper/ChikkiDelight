@@ -1,0 +1,147 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: static;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-select {
+  -webkit-appearance: none; /* Safari and Chrome */
+  -moz-appearance: none; /* Firefox */
+  appearance: none; /* Standard */
+  background: transparent; /* Remove default background */
+  padding-right: 2rem; /* Adjust padding to make space for the custom icon */
+}
+
+
+.range-input {
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%; /* Full width */
+  height: 8px; /* Track height */
+  background: #ddd; /* Track color */
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.range-input::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default styles */
+  width: 20px;
+  height: 20px;
+  background: rgba(207, 12, 12, 0.747); 
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-input::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #af4c4c; /* Thumb color */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-input::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  background: #af4c4c; /* Thumb color */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-input::-ms-track {
+  width: 100%;
+  height: 8px;
+  background: transparent; /* Required for proper appearance */
+  border-color: transparent;
+  color: transparent;
+}
+
+.range-input::-ms-fill-lower {
+  background: #ddd; /* Track color */
+  border-radius: 5px;
+}
+
+.range-input::-ms-fill-upper {
+  background: #ddd; /* Track color */
+  border-radius: 5px;
+}
+/* Custom CSS */
+.fixed-header {
+  padding: 10px 160px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.small-logo {
+  width: 180px;
+  height: 60px;
+  margin-top: -5px;
+  margin-right: 100px;
+}
+
+.fixed-position {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+}
+
+.spacer {
+  height: 340px;
+}
+
+.shifted-bars {
+  margin-left: -140px;
+}
+
+.adjusted-logo {
+  position: absolute;
+  top: 10px;
+  left: 45px;
+  
+}
+
+.icons-right {
+  margin-left: auto;
+}
